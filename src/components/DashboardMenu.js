@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Menu, Segment } from 'semantic-ui-react'
+import ServiceAnimalsDetailsList from './ServiceAnimalsDetailsList.js'
+import ServiceAnimalsDiv from './ServiceAnimalsDiv'
 
 export default class MenuTabularOnLeft extends Component {
   state = { activeItem: 'user info' }
@@ -38,7 +40,7 @@ export default class MenuTabularOnLeft extends Component {
 
         <Grid.Column stretched width={12}>
           <Segment>
-            This is an stretched grid column. This segment will always match the tab height
+            <ServiceAnimalsDiv className="sadl"/>
           </Segment>
         </Grid.Column>
       </Grid>
