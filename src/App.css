@@ -1,28 +1,31 @@
 .App {
   text-align: center;
+  align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.Signup-form {
+  align: center;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.Signup {
+  text-align: left;
+  align: center;
+  height: auto;
 }
 
-.App-title {
-  font-size: 1.5em;
+ui form Signup {
+  align: center;
 }
 
-.App-intro {
-  font-size: large;
+.form.ui.form.Signup {
+  align: center;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+div.App {
+  align: center;
+}
+
+.LoginSignupButtons {
+  align: center;
 }

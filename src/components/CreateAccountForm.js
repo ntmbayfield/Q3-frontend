@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
 
-const LoginForm = () => (
-  <div className='login-form'>
+const CreateAccountForm = () => (
+  <div className='create-account-form'>
     {/*
       Heads up! The styles below are necessary for the correct render of this example.
       You can do same with CSS, the main idea is that all the elements up to the `Grid`
@@ -18,7 +18,7 @@ const LoginForm = () => (
     <Grid textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
       <Grid.Column style={{ maxWidth: 450 }}>
         <Header as='h2' color='teal' textAlign='center'>
-         Log-in to your account
+          Signup For An Account
         </Header>
         <Form size='large'>
           <Segment stacked>
@@ -26,7 +26,14 @@ const LoginForm = () => (
               fluid
               icon='user'
               iconPosition='left'
+              placeholder='Name'
+            />
+            <Form.Input
+              fluid
+              icon='user'
+              iconPosition='left'
               placeholder='E-mail address'
+              type="email"
             />
             <Form.Input
               fluid
@@ -35,12 +42,30 @@ const LoginForm = () => (
               placeholder='Password'
               type='password'
             />
-            <Button color='teal' fluid size='large'>Login</Button>
+            <Form.Input
+              fluid
+              icon='lock'
+              iconPosition='left'
+              placeholder='Re-enter Password'
+              type='password'
+            />
+            <Form.Input
+              fluid
+              placeholder='Condition'
+            />
+            <Form.Input
+              fluid
+              placeholder='Emergency Contact Number'
+            />
+
+            <Button color='teal' fluid size='large'>
+              Create My Account!
+            </Button>
           </Segment>
         </Form>
         <Message>
           <Button className="ui large fluid button" role="button">
-            New to us? Sign up!
+            Already Have an Account? Login
           </Button>
         </Message>
       </Grid.Column>
@@ -48,4 +73,4 @@ const LoginForm = () => (
   </div>
 )
 
-export default LoginForm
+export default CreateAccountForm;

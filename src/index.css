@@ -3,3 +3,11 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+LoginSignupButtons {
+  align: center;
+}
+
+div.App {
+  align: center;
+}
