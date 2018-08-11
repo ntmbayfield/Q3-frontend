@@ -1,21 +1,21 @@
 import React from 'react'
 import { Grid, Segment, Divider } from 'semantic-ui-react'
-import ServiceAnimalsDetailsList from './ServiceAnimalsDetailsList.js'
-import CRUDServAnimInfoList from './CRUDServAnimInfoList.js'
+import UserDetailsList from './UserDetailsList.js'
+import EditUserInfo from './EditUserInfo.js'
 import ColumnHeader from './ColumnHeader.js'
 
-const ServiceAnimalsDiv = () => (
+const UserDiv = ({userInfo}) => (
   <Grid columns={2} relaxed>
     <Grid.Column>
       <ColumnHeader />
-      <ServiceAnimalsDetailsList />
+      <UserDetailsList userInfo={userInfo}/>
     </Grid.Column>
     <Divider vertical></Divider>
     <Grid.Column>
       <ColumnHeader />
-      <CRUDServAnimInfoList />
+      <EditUserInfo userInfo={this.userInfo}/>
     </Grid.Column>
   </Grid>
 )
 
-export default ServiceAnimalsDiv;
+export default UserDiv;
