@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Menu, Segment } from 'semantic-ui-react'
-import ServiceAnimalsDetailsList from './ServiceAnimalsDetailsList.js'
-import ServiceAnimalsDiv from './ServiceAnimalsDiv'
+import ServAnimDetails from './ServAnimDetails.js'
+import ServAnimDiv from './ServAnimDiv.js'
 import UserDiv from './UserDiv.js'
 import EditUserInfo from './EditUserInfo.js'
 

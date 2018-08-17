@@ -5,14 +5,13 @@ import { Container, Divider, Grid, Header, Icon } from 'semantic-ui-react'
 import './App.css';
 import ColumnHeader from './components/ColumnHeader.js';
 import EditUserInfo from './components/EditUserInfo.js';
-import UserDetailsList from './components/UserDetailsList.js'
+import UserDetails from './components/UserDetails.js';
 import UserDiv from './components/UserDiv.js';
 import LoginForm from './components/LoginForm.js';
-import SignupForm from './components/SignupForm.js';
 import DashboardHeader from './components/DashboardHeader.js';
 import DashboardMenu from './components/DashboardMenu.js';
-import CreateAccountForm from './components/CreateAccountForm';
-import IndexDivDivider from './components/IndexDivDivider.js';
+import CreateAccountForm from './components/CreateAccountForm.js';
+
 
 
 class App extends Component {
