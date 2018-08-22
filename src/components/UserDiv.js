@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid, Segment, Divider } from 'semantic-ui-react'
 import UserDetails from './UserDetails.js'
 import EditUserInfo from './EditUserInfo.js'
-import ColumnHeader from './ColumnHeader.js'
+
 
 function UserDiv({userInfo}) {
   return (

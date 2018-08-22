@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { Container, Divider, Grid, Header, Icon } from 'semantic-ui-react'
 //import ButtonExampleButton from './components/buttonExample.js';
 import './App.css';
-import ColumnHeader from './components/ColumnHeader.js';
 import EditUserInfo from './components/EditUserInfo.js';
 import UserDetails from './components/UserDetails.js';
 import UserDiv from './components/UserDiv.js';
