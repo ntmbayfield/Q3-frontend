@@ -5,61 +5,40 @@ import ServAnimDiv from './ServAnimDiv.js'
 import UserDiv from './UserDiv.js'
 import EditUserInfo from './EditUserInfo.js'
 
-export default class MenuTabularOnLeft extends Component {
+export default class DashboardMenu extends Component {
   state = {
-            activeItem: 'user info',
-            userInfo: {}
-          }
-
-  //eventually this will be for the current user who is logged in
-  componentDidMount() {
-    fetch('http://localhost:3911/users/2')
-      .then(response => response.json())
-      .then(data => {
-        console.log("got data: ", data)
-        this.setState({userInfo: data[0] })
-      });
+    activeTab: 'user info',
+    userInfo: {}
   }
 
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  handleTabClick = (e, { name }) => this.setState({ activeTab: name })
 
   render() {
-    const { activeItem } = this.state
+    const { activeTab } = this.state
+
     return (
-
-      <Grid>
-        <Grid.Column width={4}>
-          <Menu fluid vertical tabular>
-            <Menu.Item
-              name='user info'
-              active={activeItem === 'user info'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name='service animal'
-              active={activeItem === 'service animal'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name='medical info'
-              active={activeItem === 'medical info'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name='account settings'
-              active={activeItem === 'account settings'}
-              onClick={this.handleItemClick}
-            />
-          </Menu>
-        </Grid.Column>
-
-        <Grid.Column stretched width={12}>
-          <Segment>
-            <UserDiv userInfo={this.state.userInfo}/>
-          </Segment>
-        </Grid.Column>
-      </Grid>
+      <Menu fluid vertical tabular>
+        <Menu.Item
+          name='user info'
+          active={activeTab=== 'user info'}
+          onClick={this.handleTabClick}
+        />
+        <Menu.Item
+          name='service animal'
+          active={activeTab === 'service animal'}
+          onClick={this.handleTabClick}
+        />
+        <Menu.Item
+          name='medical info'
+          active={activeTab === 'medical info'}
+          onClick={this.handleTabClick}
+        />
+        <Menu.Item
+          name='account settings'
+          active={activeTab === 'account settings'}
+          onClick={this.handleTabClick}
+        />
+      </Menu>
     )
   }
 }

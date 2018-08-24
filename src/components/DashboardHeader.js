@@ -10,4 +10,4 @@ const DashboardHeader = () => (
   </div>
 )
 
-export default DashboardHeader
+export default DashboardHeader;

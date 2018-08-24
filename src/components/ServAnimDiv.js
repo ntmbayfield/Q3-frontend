@@ -5,6 +5,7 @@ import EditServAnimInfo from './EditServAnimInfo.js'
 
 
 const ServAnimDiv = ({servAnimInfo}) => (
+
   <Grid columns={2} relaxed>
     <Grid.Column>
       <h4>Service Animal Info:</h4>

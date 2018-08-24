@@ -7,22 +7,31 @@
     "dotenv": "^6.0.0",
     "enzyme": "^3.4.0",
     "enzyme-adapter-react-16": "^1.2.0",
+    "eslint": "^4.18.0",
+    "eslint-plugin-react": "^7.6.1",
+    "jest": "^22.0.0",
     "jest-enzyme": "^6.0.3",
     "knex": "^0.15.2",
-    "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "react-test-renderer": "^16.4.2",
     "semantic-ui-react": "^0.82.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack-dev-server --hot --progress --colors",
+    "build": "webpack --progress --colors",
     "test": "react-scripts test --env=jsdom",
     "standard test": "standard && node my-tests.js",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "standard": "*"
+    "babel-loader": "^7.1.5",
+    "react": "^16.4.2",
+    "react-hot-loader": "^4.3.5",
+    "react-router": "^4.3.1",
+    "standard": "*",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^3.1.5"
   }
 }

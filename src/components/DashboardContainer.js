@@ -1,46 +1,34 @@
 import React, { Component } from 'react';
+import Router from 'react-router';
 import ReactDom from 'react-dom';
 import { Grid, Menu, Segment } from 'semantic-ui-react';
 import DashboardHeader from './DashboardHeader.js';
-import DashboardMenu from './DashboardMenu.js';
-// import DashboardDiv from './DashboardDiv.js';
-import AccountDiv from './AccountDiv.js';
-import MedicalDiv from './MedicalDiv.js';
-import ServAnimDiv from './ServAnimDiv.js';
-import UserDiv from './UserDiv.js';
+import DashboardDiv from './DashboardDiv.js';
+{
+  //import DashboardMenu from './DashboardMenu.js';
+}
 
-export default class DashboardContainer extends Component {
-  state = {
-    activeTab: 'user info',
-    userInfo: {},
-    servAnimInfo: {},
-    medicalInfo: {},
-    accountInfo: {}
-  }
-
-  changeMenuTab = ({ name }) => {
-    this.state.setState({ activeTab: name })
-  }
-
-
-
-
-
+export default class DashboardContainer extends React.Component {
   render() {
-    var s = this.state;
-    var content;
 
-    if(s.activeTab === 'account settings') {
-      content = AccountDiv({ accountInfo: s.accountInfo });
-    }
-    else if(s.activeTab === 'service animal') {
-      content = ServAnimDiv({ servAnimInfo: s.servAnimInfo });
-    }
-    else if(s.activeTab === 'medical info') {
-      content = MedicalDiv({ medicalInfo: s.medicalInfo });
-    }
-    else {
-      content = { UserDiv };
+
+    {
+      //const activeTab = this.state.activeTab;
+      // var s = this.state;
+      // var content;
+      //
+      // if(s.activeTab === 'account settings') {
+      //   content = AccountDiv({ accountInfo: s.accountInfo });
+      // }
+      // else if(s.activeTab === 'service animal') {
+      //   content = ServAnimDiv({ servAnimInfo: s.servAnimInfo });
+      // }
+      // else if(s.activeTab === 'medical info') {
+      //   content = MedicalDiv({ medicalInfo: s.medicalInfo });
+      // }
+      // else {
+      //   content = UserDiv({userInfo: s.userInfo});
+      // }
     }
 
     return (
@@ -48,21 +36,18 @@ export default class DashboardContainer extends Component {
         <Grid.Row>
           <Grid.Column width={2}></Grid.Column>
           <Grid.Column width={12}>
-              <DashboardHeader />
+            <DashboardHeader />
           </Grid.Column>
           <Grid.Column width={2}></Grid.Column>
         </Grid.Row>
-        {
         <Grid.Row>
-          <Grid.Column width={4}>
-            <DashboardMenu />
+          <Grid.Column width={2}></Grid.Column>
+          <Grid.Column width={12}>
+            <DashboardDiv />
           </Grid.Column>
-          <Grid.Column stretched width={12}>
-            <UserDiv />
-          </Grid.Column>
+          <Grid.Column width={2}></Grid.Column>
         </Grid.Row>
-      }
       </Grid>
-    )
+    );
   }
 }
