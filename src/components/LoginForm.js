@@ -39,11 +39,16 @@ class LoginForm extends Component {
                   placeholder='Password'
                   type='password'
                 />
-                <Button color='teal' fluid size='large'>Login</Button>
+                <Button
+                  color='teal'
+                  fluid size='large'
+                >
+                  Login
+                </Button>
               </Segment>
             </Form>
             <Message>
-              <Link to="createAccountForm">
+              <Link to="/createAccountForm">
                 <SignupButton />
               </Link>
             </Message>

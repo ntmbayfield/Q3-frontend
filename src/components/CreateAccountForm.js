@@ -1,4 +1,9 @@
 import React, { Component } from 'react'
+import {
+  Route,
+  Link,
+  HashRouter
+} from "react-router-dom";
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
 
 class CreateAccountForm extends Component {
@@ -67,7 +72,9 @@ class CreateAccountForm extends Component {
             </Form>
             <Message>
               <Button className="ui large fluid button" role="button">
+                <Link to="/login">
                 Already Have an Account? Login
+                </Link>
               </Button>
             </Message>
           </Grid.Column>

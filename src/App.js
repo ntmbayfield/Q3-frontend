@@ -27,30 +27,7 @@ class App extends Component {
         >
           <Grid.Row>
             <Grid.Column>
-        {// <Grid.Row>
-          //   <Grid.Column width={4}></Grid.Column>
-          //   <Grid.Column width={8}>
-          //     <LoginForm />
-          //   </Grid.Column>
-          //   <Grid.Column width={4}></Grid.Column>
-          // </Grid.Row>
-          //
-          // <Grid.Row>
-          //   <Grid.Column width={4}></Grid.Column>
-          //   <Grid.Column width={8}>
-          //       <CreateAccountForm />
-          //   </Grid.Column>
-          //   <Grid.Column width={4}></Grid.Column>
-          // </Grid.Row>
-          //
-          // <Grid.Row>
-          //   <Grid.Column width={2}></Grid.Column>
-          //   <Grid.Column width={12}>
-          //     <DashboardContainer />
-          //   </Grid.Column>
-          //   <Grid.Column width={2}></Grid.Column>
-          // </Grid.Row>
-        }
+      
                 <Main />
               </Grid.Column>
             </Grid.Row>
