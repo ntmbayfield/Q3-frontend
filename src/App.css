@@ -32,35 +32,125 @@ div.column {
 h1, h2, p, ul, li {
   font-family: sans-serif;
 }
-ul.header li {
+ul.header {
   display: inline;
   list-style-type: none;
-  margin: 0;
+  margin: 0px;
+  align: right;
 }
 ul.header {
-  background-color: #111;
-  padding: 0;
+  padding: 0px;
 }
-ul.header li a {
-  color: #FFF;
+ul.header a {
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
   display: inline-block;
+  align: left;
 }
 
 .content {
-  background-color: #FFF;
   padding: 20px;
 }
 .content h2 {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 .content li {
   margin-bottom: 10px;
 }
 
-.active {
-  background-color: #0099FF;
+.sideBySide {
+  height: 400px;
+  width: 400px;
+  display: inline;
+  align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+#evenheightlogo {
+  width: 200px;
+  height: 50px;
+}
+
+.row-of-3-pics {
+  height: 200px;
+  width: 150px;
+  padding: 10px;
+  display: inline;
+}
+
+.homeText {
+  text-align: left;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#gs {
+  width: 150px;
+  height: 200px;
+  margin: 10px;
+}
+
+#nose2screen {
+  width: 150px;
+  height:200px;
+  margin: 10px;
+}
+
+#tinydogear2phone {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.heroHeader {
+  background-image: url(https://image.ibb.co/eTKWE9/Screen_Shot_2018_09_04_at_12_10_01_PM.png);
+  padding: 128px 42px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.headerPara {
+  font-size: 18px;
+}
+
+.heroH {
+  color: white;
+}
+
+.heroP {
+  color: white;
+  font-style: italic;
+}
+
+.tinyDog {
+  align: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 120px;
+}
+
+.homeQuoteContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.create-account-form {
+  padding-top: 90px;
+}
+
+.dashboardContainer {
+  padding-top: 90px;
+}
+
+.login-form {
+  padding-top: 90px;
 }

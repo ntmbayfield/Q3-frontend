@@ -15,13 +15,6 @@ class CreateAccountForm extends Component {
           You can do same with CSS, the main idea is that all the elements up to the `Grid`
           below must have a height of 100%.
         */}
-        <style>{`
-          body > div,
-          body > div > div,
-          body > div > div > div.login-form {
-            height: 100%;
-          }
-        `}</style>
         <Grid textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
           <Grid.Column style={{ maxWidth: 450 }}>
             <Header as='h2' color='teal' textAlign='center'>
@@ -34,6 +27,9 @@ class CreateAccountForm extends Component {
                   icon='user'
                   iconPosition='left'
                   placeholder='Name'
+                  type="text"
+                  required
+                  autofocus
                 />
                 <Form.Input
                   fluid
@@ -41,6 +37,7 @@ class CreateAccountForm extends Component {
                   iconPosition='left'
                   placeholder='E-mail address'
                   type="email"
+                  required
                 />
                 <Form.Input
                   fluid
@@ -48,6 +45,7 @@ class CreateAccountForm extends Component {
                   iconPosition='left'
                   placeholder='Password'
                   type='password'
+                  required
                 />
                 <Form.Input
                   fluid
@@ -55,14 +53,19 @@ class CreateAccountForm extends Component {
                   iconPosition='left'
                   placeholder='Re-enter Password'
                   type='password'
+                  required
                 />
                 <Form.Input
                   fluid
                   placeholder='Condition'
+                  type='text'
+                  required
                 />
                 <Form.Input
                   fluid
                   placeholder='Emergency Contact Number'
+                  type='number'
+                  required
                 />
 
                 <Button color='teal' fluid size='large'>

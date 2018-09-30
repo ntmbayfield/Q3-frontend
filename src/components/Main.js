@@ -7,7 +7,10 @@ import {
 import Home from "./Home.js";
 import LoginForm from "./LoginForm.js";
 import CreateAccountForm from "./CreateAccountForm.js";
-import DashboardContainer from "./DashboardContainer.js"
+import DashboardContainer from "./DashboardContainer.js";
+import SiteHeader from "./SiteHeader.js";
+import Jumbotron from "./Jumbotron.js";
+import FixedNavbar from './FixedNavbar.js';
 
 
 class Main extends Component {
@@ -15,13 +18,7 @@ class Main extends Component {
     return (
       <HashRouter>
         <div>
-          <h1>Welcome to the Rex-2-The-Rescue-App</h1>
-          <ul className="header">
-            <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to="/login">Login</NavLink></li>
-            <li><NavLink to="/signup">Signup</NavLink></li>
-            <li><NavLink to="/private">Dashboard</NavLink></li>
-          </ul>
+          < FixedNavbar />
           <div className="publicPanels">
             <Route exact path="/" component={Home}/>
             <Route path="/login" component={LoginForm}/>

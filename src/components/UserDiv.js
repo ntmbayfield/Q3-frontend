@@ -4,13 +4,15 @@ import UserDetails from './UserDetails.js'
 import EditUserInfo from './EditUserInfo.js'
 
 
-const UserDiv = ({userInfo}) => {
+const UserDiv = ({userInfo, phoneNumberUpdate}) => {
+
+
   console.log(userInfo);
   return (
       <Grid columns={2} relaxed>
         <Grid.Column>
           <h4>User Info:</h4>
-          <UserDetails userInfo={userInfo}/>
+          <UserDetails userInfo={userInfo} phoneNumberUpdate={phoneNumberUpdate}/>
         </Grid.Column>
         <Divider vertical></Divider>
         <Grid.Column>
