@@ -6,7 +6,6 @@ import EditUserInfo from './EditUserInfo.js'
 
 const UserDiv = ({userInfo, phoneNumberUpdate}) => {
 
-
   console.log(userInfo);
   return (
       <Grid columns={2} relaxed>
