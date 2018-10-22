@@ -29,7 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "standard test": "standard && node my-tests.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "homepage": "http://ntmbayfield.github.io/k9-1-1"
   },
   "devDependencies": {
     "standard": "*"
