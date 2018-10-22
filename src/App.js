@@ -20,17 +20,12 @@ class App extends Component {
     return (
       <div className="app">
 
-        <Grid
-          textAlign='center'
-          style={{ height: '100%' }}
-          verticalAlign='middle'
-        >
+        <Grid>
           <Grid.Row>
             <Grid.Column>
-      
-                <Main />
-              </Grid.Column>
-            </Grid.Row>
+              <Main />
+            </Grid.Column>
+          </Grid.Row>
         </Grid>
       </div>
     )

@@ -29,26 +29,34 @@ export default class DashboardMenu extends Component {
 
     return (
       <Menu fluid vertical tabular>
-        <Link to="/userPanel"><Menu.Item
-          name='user info'
-          active={activeTab=== 'user info'}
-          onClick={this.handleTabClick}
-        /></Link>
-        <Link to="servAnimPanel"><Menu.Item
-          name='service animal'
-          active={activeTab === 'service animal'}
-          onClick={this.handleTabClick}
-        /></Link>
-        <Link to="medicalPanel"><Menu.Item
-          name='medical info'
-          active={activeTab === 'medical info'}
-          onClick={this.handleTabClick}
-        /></Link>
-        <Link to="accountPanel"><Menu.Item
-          name='account settings'
-          active={activeTab === 'account settings'}
-          onClick={this.handleTabClick}
-        /><Link>
+        <Link to="/userPanel">
+          <Menu.Item
+            name='user info'
+            active={activeTab === 'user info'}
+            onClick={this.handleTabClick}
+          />
+        </Link>
+        <Link to="servAnimPanel">
+          <Menu.Item
+            name='service animal'
+            active={activeTab === 'service animal'}
+            onClick={this.handleTabClick}
+            />
+          </Link>
+        <Link to="medicalPanel">
+          <Menu.Item
+            name='medical info'
+            active={activeTab === 'medical info'}
+            onClick={this.handleTabClick}
+          />
+        </Link>
+        <Link to="accountPanel">
+          <Menu.Item
+            name='account settings'
+            active={activeTab === 'account settings'}
+            onClick={this.handleTabClick}
+          />
+        <Link>
       </Menu>
     )
   }

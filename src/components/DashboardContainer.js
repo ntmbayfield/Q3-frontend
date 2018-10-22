@@ -8,22 +8,24 @@ import DashboardDiv from './DashboardDiv.js';
 export default class DashboardContainer extends React.Component {
   render() {
     return (
-      <Grid>
-        <Grid.Row>
-          <Grid.Column width={2}></Grid.Column>
-          <Grid.Column width={12}>
-            <DashboardHeader />
-          </Grid.Column>
-          <Grid.Column width={2}></Grid.Column>
-        </Grid.Row>
-        <Grid.Row>
-          <Grid.Column width={2}></Grid.Column>
-          <Grid.Column width={12}>
-            <DashboardDiv />
-          </Grid.Column>
-          <Grid.Column width={2}></Grid.Column>
-        </Grid.Row>
-      </Grid>
+      <div className="dashboardContainer">
+        <Grid>
+          <Grid.Row>
+            <Grid.Column width={2}></Grid.Column>
+            <Grid.Column width={12}>
+              <DashboardHeader />
+            </Grid.Column>
+            <Grid.Column width={2}></Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column width={2}></Grid.Column>
+            <Grid.Column width={12}>
+              <DashboardDiv />
+            </Grid.Column>
+            <Grid.Column width={2}></Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </div>
     );
   }
 }
